@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Bienvenido a la API');
-});
+}); //Comentario para implementar la rama endpoint-root
 
 app.get('/saludo/:nombre', (req, res) => {
     res.send(`Hola, ${req.params.nombre}!`);

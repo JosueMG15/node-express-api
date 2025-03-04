@@ -14,7 +14,7 @@ app.get('/saludo/:nombre', (req, res) => {
 
 app.post('/mensaje', (req, res) => {
     res.json({ mensaje: `Recibido: ${req.body.mensaje}` });
-});
+}); //Comentario para implementar la rama endpoint-mensaje
 
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);

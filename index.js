@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 app.get('/saludo/:nombre', (req, res) => {
     res.send(`Hola, ${req.params.nombre}!`);
-});
+}); //Comentario para implementar la rama endpoint-saludo
 
 app.post('/mensaje', (req, res) => {
     res.json({ mensaje: `Recibido: ${req.body.mensaje}` });
